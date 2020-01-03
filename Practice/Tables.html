@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+	<title> Dealing with Tables in HTML.</title>
+</head>
+<body>
+	<h2>Sample Table.</h2>
+	<table>
+		<tr>
+			<td>Sagun Shakya</td>
+			<td>23</td>
+			<td>MSc. Data Science II</td>
+			<td>GITAM Institute of Science</td>
+			<td>Santhi Sadan International Hostel</td>	
+		</tr>
+			
+		<tr>
+			<td>Shiwa Ebrahim</td>
+			<td>29</td>
+			<td>MSc. Data Science II</td>
+			<td>GITAM Institute of Science</td>
+			<td>Santhi Sadan International Hostel</td>	
+
+		</tr>
+
+		<tr>
+			<td>Bill Gates</td>
+			<td>42</td>
+			<td>MSc. Computer Science I</td>
+			<td>Harvard University</td>
+			<td>Silicon Valley</td>	
+
+		</tr>
+		
+	</table>
+	<br>
+	<br>
+
+	<!-- To add borders and spanning the columns. -->
+
+	<h2>To add borders and span columns.</h2>
+	<table border="1">
+		<tr>
+			<td colspan="2"> R1 and C1&C2(merged)</td>
+			<td>R1 and C3</td>
+		</tr>
+
+		<tr>
+			<td> R2 and C1</td>
+			<td> R2 and C2</td>
+			<td> R2 and C3</td>
+		</tr>
+		
+	</table>
+
+	<!-- To span multiple rows.-->
+	<h2>To span multiple rows.</h2>
+
+	<table border="2">
+		<tr>
+			<td>R0 and C1</td>
+			<td>R0 and C2</td>
+			<td>R0 and C3</td>
+		</tr>
+
+		<tr>
+			<td>R1 and C1</td>
+			<td>R1 and C2</td>
+			<td rowspan="2">R1&R2 (merged) and C3</td>
+		</tr>
+
+		<tr>
+			<td>R2 and C1</td>
+			<td>R2 and C2</td>
+		</tr>
+	</table>
+
+<br>
+<br>
+
+	<h2>Modifying the original Table.</h2>
+	<!-- Using Column spans.-->
+
+	<table border="1">
+
+		<!--Adding Column names.-->
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Qualification</th>
+			<th>Affiliation</th>
+			<th>Address</th>
+		</tr>
+
+		<tr>
+			<td>Mark Zuckerberg</td>
+			<td>32</td>
+			<td>BSc. in CSIT</td>
+			<td>Stamford University</td>
+			<td>Silicon Valley</td>
+		</tr>
+		<tr>
+			<td>Sagun Shakya</td>
+			<td>23</td>
+			<td rowspan="2">MSc. Data Science II</td>
+			<td rowspan="2"> GITAM Institute of Science</td>
+			<td rowspan="2"> Santhi Sadan International Hostel</td>
+		</tr>
+		<tr>
+			<td>Shiwa Ebrahim</td>
+			<td>29</td>
+						
+		</tr>
+
+		<tr>
+			<td>Bill Gates</td>
+			<td>42</td>
+			<td>MSc. Computer Science I</td>
+			<td>Harvard University</td>
+			<td>Silicon Valley</td>	
+
+		</tr>
+		
+
+	</table>
+
+
+</body>
+</html>
